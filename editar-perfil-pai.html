@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<header>Editar Perfil</header>
+		<link rel="stylesheet" type="text/css" href="css/estilo-editar-perfil-pai.css">
+	</head>
+
+	<body>
+
+		<img id="pai" src="img/foto-perfil-pai.jpg">
+		<br/>
+		<small>ID: Pai Responsável</small>
+		<br/>
+		Upload uma nova imagem <button>Buscar Imagem</button>
+		<br/>
+		<br/>
+		<h2>Meus dados</h2>
+		<div>
+			<label for="nome">Nome:</label><input type="nome" name="nome" id="nome">
+		</div>
+
+		<div>
+			<label for="sobrenome">Sobrenome:</label><input type="sobrenome" name="sobrenome" id="sobrenome">
+		</div>
+		<br/>
+		<!-- para CPF e RG, colocar regra no JS de que o campo não deve permitir edição-->
+		<div>
+			<label for="cpf">CPF:</label><input type="text" name="cpf" id="cpf">
+		</div>
+		<br/>
+
+		<div>
+			<label for="rg">RG:</label><input type="text" name="rg" id="rg"> 
+		</div>
+		<br/>
+
+		<div>
+			<label for="telefone">Telefone:</label><input type="telefone" name="telefone" id="telefone">
+		</div>
+		<br/>
+
+		<div>
+			<label for="email">E-mail:</label><input type="email" name="email" id="email">
+		</div>
+		<br/>
+
+		<div>
+			<label for="endereco">Endereço:<input type="endereco" name="endereco" id="endereco">
+			<label for="numero">Número:<input type="numero" name="numero" id="numero">
+			<label for="complemento">Complemento:<input type="complemento" name="complemento" id="complemento">
+			<br/><br/>
+			<label for="cidade">Cidade:<input type="cidade" name="cidade" id="cidade">
+			<label for="estado">Estado:<input type="estado" name="estado" id="estado">
+		</div>
+			
+
+			<h3>Dependente(s)</h3>
+				<div>
+					<label for="nome">Nome:<input type="nome" name="nome" id="nome">
+				</div>
+				
+				<div>
+					<label for="sobrenome">Sobrenome:</label><input type="sobrenome" name="sobrenome" id="sobrenome">
+				</div>
+				<br/>
+					<!-- para CPF e RG, colocar regra no JS de que o campo não deve permitir edição-->
+
+				<div>
+					<label for="cpf">CPF:<input type="cpf" name="cpf" id="cpf">
+				</div>
+				<br/>
+
+				<div>
+				 	<label for="rg">RG:<input type="rg" name="rg" id="rg">
+				 </div>
+				<br/>
+
+				<div>
+					<label for="telefone">Telefone:<input type="telefone" name="telefone" id="telefone">
+				</div>
+				<br/>
+
+				<div>
+					<label for="escola">Escola:<input type="escola" name="escola" id="escola">
+				</div>
+					
+		<br/>
+		<input type="submit" name="salvar" value="Salvar">
+	</body>
+</html>

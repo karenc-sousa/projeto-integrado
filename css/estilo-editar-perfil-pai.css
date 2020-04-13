@@ -1,0 +1,38 @@
+body {
+	background-color: rgb(169,209,142);
+	font-family: Calibri;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+header {
+	color: white;
+	font-style: thick;
+	font-size: 30px;
+}
+
+input {
+	margin-left: 5px;
+}
+
+#nome {
+	width: 300px;
+}
+
+#sobrenome {
+	width: 265px;
+}
+
+.doc {
+	float: left;
+}
+
+#email {
+	width: 300px;
+}
+
+#complemento {
+	width: 100px;
+}
+}
+}

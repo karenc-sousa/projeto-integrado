@@ -1,0 +1,31 @@
+body {
+	background-color: rgb(169,209,142);
+	font-family: Calibri;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+header {
+	color: white;
+	font-style: thick;
+	font-size: 30px;
+	
+	
+}
+
+#fechar {
+	float: right;
+	padding-top: none;
+	margin-top: none;
+	/*precisa ajustar 
+	aposição do fechar na tela, está muito embaixo*/
+}
+
+ul {
+	list-style-type: none;
+	
+}
+
+h1 {
+	font-size: 24px;
+}
