@@ -1,5 +1,6 @@
 body {
 	background-color: rgb(169,209,142);
+	text-align: justify;
 	font-family: Calibri;
 	margin-left: 400px;
 	margin-right: 400px;
@@ -33,6 +34,4 @@ input {
 
 #complemento {
 	width: 100px;
-}
-}
 }
