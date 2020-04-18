@@ -46,3 +46,25 @@ ul li {
 	background-color: rgb(169,209,142);
 	margin-right: 870px;
 }
+
+.icones {
+	background-color: white;
+	text-align: center;
+}
+
+#icone-perfil {
+	margin-right: 200px;
+}
+
+#icone-local {
+	margin-right: 150px;
+}
+
+#icone-pagamento {
+	margin-left: 10px;
+}
+
+#icone-config {
+	margin-right: 310px;
+	margin-top: 20px;
+}
