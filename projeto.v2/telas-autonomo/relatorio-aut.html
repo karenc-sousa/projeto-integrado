@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- FavIcon Icone Barra do Navegador -->
+    <link rel="sortcut icon" href="../img/logo.png" type="image/x-icon"/>
+
+    <!-- CSS externo próprio -->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    
+    <!-- Insira a Título da página aqui-->
+    <title>Controle de Pagamentos</title>
+  </head>
+
+  <body class="bg-success">
+    
+    <!-- Container Padrão. Deve englobar todo o conteudo da pagina  -->
+    <div class="container rounded p-1 m-50" style="width:60rem">
+
+        <!-- NavBar Padrão / Não Usar na Pagina Inicial -->
+        <div class="row">
+            <div class="col-sm">
+                <nav class="navbar navbar-light bg-light mb-1 mx-sm-5 rounded">
+                    <img src="../img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                
+                    <div class="float-right">
+                        <!-- IMPORTANTE: href deve ser incluido ao compilar projeto -->
+                    <a class="navbar-brand pull-right" href="inicial-aut.html"><img src="../img/navbar/icon-home.png" /></a>
+                    <a class="navbar-brand pull-right" href="perfil-aut.html"><img src="../img/navbar/icon-profile.png" /></a>
+                    <a class="navbar-brand pull-right" href="chat.html"><img src="../img/navbar/icon-chat.png"></a>
+                    <a class="navbar-brand pull-right" href="check-list.html"><img src="../img/navbar/icon-check.png" /></a>
+                    <a class="navbar-brand pull-right active" href="relatorio-aut.html"><img src="../img/navbar/icon-pay.png"/></a>
+                    <a class="navbar-brand pull-right" href="config.html"><img src="../img/navbar/icon-config.png"/></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="bg-light p-sm-3 mx-sm-5 rounded">       
+            <div class="row ml-sm-3">
+             <h5>Consultar pagamento da mensalidade </h5> <br>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <form method="post" action="cadastro.php">Forma de Pagamento : 
+                    <select name="payment"> 
+                    <option value="1"></option>
+                    <option value="2">Débito</option>
+                    <option value="3">Crédito</option>
+                    <option value="4">Boleto Bancário</option>
+                    </select>
+                    </form>
+                </div>
+
+                <div class="col-sm-3">
+                    <form method="post" action="cadastro.php"> Mês
+                        <select name="period"> 
+                            <option value="0"></option>
+                            <option value="1">Todos</option>
+                            <option value="2">Janeiro</option>
+                            <option value="3">Fevereiro</option>
+                            <option value="4">Março</option>
+                            <option value="5">Abrl</option>
+                            <option value="6">Maio</option>
+                            <option value="7">Junho</option>
+                            <option value="8">Julho</option>
+                            <option value="9">Agosto</option>
+                            <option value="10">Setembro</option>
+                            <option value="11">Outubro</option>
+                            <option value="12">Novembro</option>
+                            <option value="13">Dezembro</option>
+
+                        </select>
+                    </form>
+                </div>
+
+                <div class="col-sm-3">
+                    <form method="post" action="cadastro.php">Situação :
+                        <select name="status">
+                            <option value="0"></option> 
+                            <option value="1">Todos</option> 
+                            <option value="3">Pago</option>
+                            <option value="3">Pendente</option>
+                        </select>
+                    </form>
+                </div>   
+                <div class="mt-sm-3 ml-sm-3 mb-sm-3">
+                <input class='btn btn-success' type='submit' name='botao' value='Buscar'>
+                </div>
+            </div>
+
+
+<!--- TABELA -->      
+
+        
+        <table class="border" width="100%">
+          <thead>            
+            <tr>   
+                <th height="20%">Nome</th>
+                <th height="20%">ID</th>
+                <th height="25%" width="25%">Forma de Pagamento</th>
+                <th width="25%">Mês</th>
+                <th widht="25%">Situação</th>
+            </tr>
+          </thead>
+          <tbody>   
+            <tr>
+                <td class="table-success"> Anita Carvalho </td> 
+                <td class="table-success"> 1001 </td>
+                <td class="table-success">Boleto</td>
+                <td class="table-success">Janeiro</td>
+                <td class="table-success">Pago</td>
+            </tr>
+
+            <tr>
+                <td> Jorge de Melo </td> 
+                <td> 1002 </td>
+                <td></td>
+                <td>Janeiro</td>
+                <td class="not-payed">Pendente</td> 
+            </tr>
+
+            <tr>
+                <td class="table-success"> Cintia de Sousa de Paula </td> 
+                <td class="table-success"> 1003 </td>
+                <td class="table-success">Cartão de Crédito </td>
+                <td class="table-success">Janeiro</td>
+                <td class="table-success">Pago</td>   
+            </tr>
+
+            <tr>
+                <td> Antonio Andrade </td> 
+                <td> 1004 </td>
+                <td>Cartão de Débito </td>
+                <td>Janeiro</td>
+                <td>Pago</td>
+            </tr>
+
+            <tr>
+                <td class="table-success"> Mario Aparecido Santos </td> 
+                <td class="table-success"> 1005 </td>
+                <td class="table-success">Boleto</td>
+                <td class="table-success">Janeiro</td>
+                <td class="table-success">Pago</td>
+            </tr>
+
+            <tr>
+                <td> Reginaldo Pereira </td> 
+                <td> 1006 </td>
+                <td>Cartão de Crédito</td>
+                <td>Janeiro</td>
+                <td>Pago</td>  
+            </tr>                     
+
+            <tr>
+                <td class="table-success"> Fernanda de Figueiredo </td> 
+                <td class="table-success"> 1007 </td>
+                <td class="table-success"></td>
+                <td class="table-success">Janeiro</td>
+                <td class="table-success not-payed">Pendente</td>
+            </tr>                      
+
+            <tr>
+                <td> Daniel Toledo </td> 
+                <td> 1008 </td>
+                <td>Cartão de crédito</td>
+                <td>Janeiro</td>
+                <td>Pago</td>
+            </tr>                        
+    
+            <tr>
+                <td class="table-success"> Daniela Siqueira Silva </td> 
+                <td class="table-success"> 1009 </td>
+                <td class="table-success">Cartão de Débito</td>
+                <td class="table-success">Janeiro</td>
+                <td class="table-success">Pago</td>
+            </tr>                          
+
+            <tr>
+                <td> Ingrid Almeida Santos </td> 
+                <td> 1010 </td>
+                <td></td>
+                <td>Janeiro</td>
+                <td class="not-payed">Pendente</td>
+            </tr>                                   
+
+            <tr>
+                <td class="table-success"> Olavo Silva Sousa </td> 
+                <td class="table-success"> 1011 </td>
+                <td class="table-success">Boleto</td>
+                <td class="table-success">Janeiro</td>
+                <td class="table-success">Pago</td>
+            </tr>                            
+
+            <tr>
+                <td> Rogerio Sampaio </td> 
+                <td> 1012 </td>
+                <td>Boleto</td>
+                <td>Janeiro</td>
+                <td>Pago</td>
+            </tr>                                     
+
+            <tr>
+                <td class="table-success"> Antonio Ribeiro Alcantara </td> 
+                <td class="table-success"> 1013 </td>
+                <td class="table-success">Cartão de crédito</td>
+                <td class="table-success">Janeiro</td>
+                <td class="table-success">Pago</td>        
+            </tr>
+           </tbody>
+        </table>  
+
+        <input class='btn btn-success mt-sm-3' type='submit' name='botao' value='Exportar'>
+        </div>
+        </div>
+          
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

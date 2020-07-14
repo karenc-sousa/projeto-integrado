@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	  <!-- Required meta tags -->
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+	  <!-- Bootstrap CSS -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	  
+	  <!-- FavIcon Icone Barra do Navegador -->
+	  <link rel="sortcut icon" href="../img/logo.png" type="image/x-icon"/>
+
+	  <!-- CSS externo próprio -->
+	  <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+
+	  <title>Chat</title>
+	</head>
+
+	<body class="bg-success">
+
+	  	<!-- Container Padrão. Deve englobar todo o conteudo da pagina -->
+	  	<div class="container rounded p-1 m-50" style="width:60rem">
+
+			<!-- NavBar Padrão / Não Usar na Pagina Inicial -->
+			<div class="row">
+				<div class="col-sm">
+					<nav class="navbar navbar-light bg-light mb-1 mx-sm-5 rounded">
+						<img src="../img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+					
+						<div class="float-right">
+							<!-- IMPORTANTE: href deve ser incluido ao compilar projeto -->
+						<a class="navbar-brand pull-right" href="inicial-pai.html"><img src="../img/navbar/icon-home.png" /></a>
+						<a class="navbar-brand pull-right" href="perfil-pai.html"><img src="../img/navbar/icon-profile.png" /></a>
+						<a class="navbar-brand pull-right active" href="chat.html"><img src="../img/navbar/icon-chat.png" /></a>
+						<a class="navbar-brand pull-right" href="percurso.html"><img src="../img/navbar/icon-map.png" /></a>
+						<a class="navbar-brand pull-right" href="pagamento.html"><img src="../img/navbar/icon-pay.png" /></a>
+						<a class="navbar-brand pull-right" href="config.html"><img src="../img/navbar/icon-config.png" /></a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		
+			<div class="bg-light rounded p-sm-3 mx-sm-5">  				
+	
+				<div class="row pl-sm-3">
+					<h3>Mensagens</h3>
+				</div>
+				<div class="mx-sm-5">
+				<div class="container shadow-sm mb-sm-3 ">
+				<ul class="p-0">
+					<div class="row comments ml-sm-2 mb-sm-2">
+						<div class="col-sm"></div>
+						<div class="col-sm comment rounded mb-sm-2">
+							<h4 class="m-0"><a href="#">Eu</a></h4>
+							<like></like>
+							<p>Boa tarde, meu filho já está a caminho?</p>
+							<time datetime="2020-11-13T20:00"> 12:15</time>
+						</div>
+					</div>
+				</ul>
+				</div>
+				
+				<div class="container shadow-sm mb-sm-3 chat-cor">
+					<ul class="p-0">
+						<div class="row comments ml-sm-2 mb-sm-2">
+							
+							<div class="col-sm comment rounded mb-sm-2">
+								<h4 class="m-0"><a href="#">Ivan</a></h4>
+								<like></like>
+								<p> Boa tarde!</p>
+								<p> Sim, ele já está na perua e chegará em breve.</p>	
+								<time datetime="2020-11-13T20:00"> 12:17</time>
+							</div>
+							<div class="col-sm"></div>
+						</div>
+					</ul>
+				</div>
+
+				<div class="container shadow-sm mb-sm-3">
+					<ul class="p-0">
+						<div class="row comments ml-sm-2 mb-sm-2">
+							<div class="col-sm"></div>
+							<div class="col-sm comment rounded mb-2">
+									<h4 class="m-0"><a href="#">Eu</a></h4>
+								    <like></like>
+									<p>Ok, obrigada!</p>
+									<time datetime="2020-11-13T20:00"> 12:22</time>
+								</div>
+							</div>
+					</ul>
+				</div>
+
+				<div class="container shadow-sm mb-sm-3 chat-cor">
+				<ul class="p-0">
+					<div class="row comments ml-sm-2 mb-sm-2">
+						
+						<div class="col-sm comment rounded mb-2">
+							<h4 class="m-0"><a href="#">Ivan</a></h4>
+							<like></like>
+							<p> Por nada! </p>
+							<p> Em que mais posso ajudar? </p>
+							<time datetime="2020-11-13T20:00"> 12:25</time>
+						</div>
+						<div class="col-sm"></div>
+					</div>
+				</ul>
+				</div>
+			
+
+				
+				<div class="row comment-box-main p-3 rounded-bottom">
+			  		<div class="col-md-9 col-sm-9 col-9 pr-0 comment-box">
+					  <textarea type="text" class="form-control" placeholder="Escreva sua mensagem..." ></textarea>
+			  		</div>
+			  		<div class="col-md-3 col-sm-2 col-2 pl-0 text-center send-btn">
+			  			<button class="btn btn-info">Enviar</button>
+			  		</div>
+				</div>
+			</div>
+			
+		</div>
+	
+	</body>
+</html>

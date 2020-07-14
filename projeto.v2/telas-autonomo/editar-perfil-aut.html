@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- FavIcon Icone Barra do Navegador -->
+    <link rel="sortcut icon" href="../img/logo.png" type="image/x-icon"/>
+	
+	<!-- CSS externo próprio -->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+	
+    <!-- Insira o Título da página aqui-->
+    <title>Editar Perfil</title>
+  </head>
+
+  <body class="bg-success">
+    
+    <!-- Container Padrão. Deve englobar todo o conteudo da pagina  -->
+    <div class="container rounded p-1 m-50" style="width:60rem">
+
+        <!-- NavBar Padrão / Não Usar na Pagina Inicial -->
+        <div class="row">
+            <div class="col-sm">
+                <nav class="navbar navbar-light bg-light mb-1 mx-sm-5 rounded">
+                    <img src="../img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                
+                    <div class="float-right">
+                        <!-- IMPORTANTE: href deve ser incluido ao compilar projeto -->
+	                    <a class="navbar-brand pull-right" href="inicial-aut.html"><img src="../img/navbar/icon-home.png" /></a>
+	                    <a class="navbar-brand pull-right" href="perfil-aut.html"><img src="../img/navbar/icon-profile.png"  /></a>
+	                    <a class="navbar-brand pull-right" href="chat.html"><img src="../img/navbar/icon-chat.png" /></a>
+	                    <a class="navbar-brand pull-right" href="check-list.html"><img src="../img/navbar/icon-check.png" /></a>
+	                    <a class="navbar-brand pull-right" href="relatorio-aut.html"><img src="../img/navbar/icon-pay.png" /></a>
+	                    <a class="navbar-brand pull-right" href="config.html"><img src="../img/navbar/icon-config.png" /></a>
+	                </div>
+                </nav>
+            </div>
+        </div>   
+         <!-- Colocar o conteudo da sua tela. Usar Linhas e Colunas -->
+		<div class="bg-light p-sm-3 mx-sm-5 rounded">
+			<div class="m-sm-1 p-sm-1">
+				<img id="pai" src="../img/foto-perfil-pai.jpg" class="rounded-circle"/>
+				<br/>
+				<small>ID: 1001</small>
+				<br/>
+				<input type="file" name="file">
+			</div>
+			<h3>Meus dados</h3>
+
+			<form>
+				<div class="border p-sm-3">
+					<div class= "row ml-sm-3">
+						<div class="form-group form-check-inline">
+							<input class="form-check-input" type="radio" name="radio" id="feminino" value="opcao1">
+							<label class="form-check-label" for="feminino">
+							Feminino
+							</label>
+						</div>
+						<div class="form-group form-check">
+							<input class="form-check-input" type="radio" name="radio" id="masculino" value="opcao2">
+							<label class="form-check-label" for="masculino">
+							Masculino
+							</label>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+						<label for="name">Nome Completo</label>
+						<input type="text" class="form-control" name="nome" id="name">
+						</div>
+						<div class="form-group col-md-6">
+						<label for="CNPJ/CPF">CNPJ/CPF</label>
+						<input readyonly type="text" name="cpf" class="form-control CPF" id="CNPJ/CPF">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="telefone">Telefone</label>
+							<input type="text" class="form-control telefone" id="telefone">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="email">Email</label>
+							<input type="text" class="form-control" id="email">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<label for="endereco">Endereço</label>
+							<input type="text" class="form-control" id="endereco">
+						</div>
+					</div>
+					<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="cidade">Cidade</label>
+								<input type="text" class="form-control" id="cidade">
+							</div>
+						<div class="form-group col-md-4">
+						<label for="estado">Estado</label>
+						<select id="estado" class="form-control">
+							<option selected>Escolher...</option>
+							<option value="1">Acre</option>
+							<option value="2">Alagoas</option>
+							<option value="3">Amapá</option>
+							<option value="4">Amazonas </option>
+							<option value="5">Bahia</option>
+							<option value="6">Ceará</option>
+							<option value="7">Distrito Federal</option>
+							<option value="8">Espirito Santo</option>
+							<option value="9">Goiás</option>
+							<option value="10">Maranhão</option>
+							<option value="11">Mota Grosso</option>
+							<option value="12">Mato Grosso do Sul</option>
+							<option value="13">Minas Gerais</option>
+							<option value="14">Pará</option>
+							<option value="15">Paraíba</option>
+							<option value="16">Paraná</option>
+							<option value="17">Pernambuco</option>
+							<option value="18">Piauí</option>
+							<option value="19">Rio de Janeiro</option>
+							<option value="20">Rio Grande do Norte</option>
+							<option value="21">Rio Grande do Sul</option>
+							<option value="22">Rondônia</option>
+							<option value="23">Roraima</option>
+							<option value="24">Santa Catarina</option>
+							<option value="25">São Paulo</option>  
+							<option value="26">Sergipe</option>
+							<option value="27">Tocantins</option>
+						</select>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="CEP">CEP</label>
+						<input type="text" class="form-control CEP" id="CEP">
+					</div>
+				</div>
+		    
+				<div class="esc-corpo" id="origem"> 
+				  <h4>+ Escola</h4>
+				<div class="border p-sm-3">
+				  <form method="post" action="">         
+					<div class="form-row">
+					  <div class="form-group col-md-6">
+						<label for="escola" >Nome Escola:</label>
+						<input type="text" class="form-control campo" id="escola" placeholder="Nome">
+					  </div>
+			
+					  <div class="form-group col-md-6">
+						<label for="CNPJ">CNPJ:</label>
+						<input type="text" class="form-control campo CNPJ" id="CNPJ" placeholder="CNPJ">
+					  </div>
+			
+					  </div>
+					  <div class="form-group">
+						<label for="endereco">Endereço:</label>
+						<input type="text" class="form-control campo" id="endereco" placeholder="Rua do cadastro, nº 0">
+					  </div>
+					<div class="form-row">
+					  <div class="form-group col-md-6">
+						<label for="cidade">Cidade:</label>
+						<input type="text" class="form-control " id="cidade">
+					  </div>
+					  <div class="form-group col-md-4">
+						<label for="estado">Estado:</label>
+						<select id="estado" class="form-control campo">
+						  <option selected>Estados...</option>
+						  <option value="AC">Acre</option>
+						  <option value="AL">Alagoas</option>
+						  <option value="AP">Amapá</option>
+						  <option value="AM">Amazonas</option>
+						  <option value="BA">Bahia</option>
+						  <option value="CE">Ceará</option>
+						  <option value="DF">Distrito Federal</option>
+						  <option value="ES">Espírito Santo</option>
+						  <option value="GO">Goiás</option>
+						  <option value="MA">Maranhão</option>
+						  <option value="MT">Mato Grosso</option>
+						  <option value="MS">Mato Grosso do Sul </option>
+						  <option value="MG">Minas Gerais</option>
+						  <option value="PA">Pará</option>
+						  <option value="PB">Paraíba</option>
+						  <option value="PR">Paraná</option>
+						  <option value="PE">Pernambuco</option>
+						  <option value="PI">Piauí</option>
+						  <option value="RJ">Rio de Janeiro</option>
+						  <option value="RN">Rio Grande do Norte</option>
+						  <option value="RS">Rio Grande do Sul</option>
+						  <option value="RO">Rondônia</option>
+						  <option value="RR">Roraima</option>
+						  <option value="SC">Santa Catarina</option>
+						  <option value="SP">São Paulo</option>
+						  <option value="SE">Sergipe</option>
+						  <option value="TO">Tocantins</option>
+						</select>
+					  </div>
+					  <div class="form-group col-md-2">
+						<label for="CEP">CEP:</label>
+						<input type="text" class="form-control campo CEP" id="CEP">
+					  </div>
+					</div>
+				
+					<div id="mais_escola">
+					  <input type="reset" onclick="removerCampos(this);" value="Apagar Escolas">
+					  <input type='button' onclick="duplicarCampos();" value='+ Escolas' id="dados-aut-button"/>
+					  <br/> 
+					  <div id="divTeste"> </div>
+					</div> 
+				  </form>
+				</div>
+		  	
+			</form>
+			
+			</div>
+<div id="destino">
+        </div>
+        <button type="submit" class="btn btn-success mt-sm-2">Salvar</button>
+		</div>
+	</div>
+
+	<!-- Biblioteca JQuery -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- Plugin Validate para JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+            
+    <!-- Plugin Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+	<!-- adicionando mais escolas. Vide arquivo JS -->
+	<script src="../js/script.js"></script>  
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

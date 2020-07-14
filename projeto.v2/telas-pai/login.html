@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="css/estilo.css">
+         <script src="https://jquery.slim.min.js"></script> 
+         <script src="https://bootstrap.min.css"></script> 
+         <script src="https://bootstrap.bundle.min.js"></script> 
+         <script src="https://all.css"></script>
+         
+         
+         
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- FavIcon Icone Barra do Navegador -->
+    <link rel="sortcut icon" href="../img/logo.png" type="image/x-icon"/>
+    
+   <!-- CSS externo próprio -->
+   <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+	
+    <!-- Insira a Título da página aqui-->
+    <title class="titulo-login">Login</title>
+     
+    </head>
+    <body class="bg-success">
+      
+    <div class="container rounded" id="color">  
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin  my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Login</h5>
+            <form action="inicial-pai.html" class="form-signin" onsubmit="funcaoParaExecutar()" >
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Email </label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Senha</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Lembrar minha Senha</label>
+              </div>
+              
+              <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit">Entrar</button>
+              
+              <hr class="my-4">
+              
+              <a href="esqueceu-senha.html" class="login-esqueceu">Esqueci minha senha</a>
+
+              <p class="login-cadastre">
+              <a href="cadastro.html">Cadastre-se agora</a>
+              </p>
+
+              <div class="row text-center ml-sm-3">
+              <span id="logo"><img src="../img/logo.png" class="logo" alt="logo_transporte"></span> 
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+       
+       <!-- Bem vindo -->
+       <script type="text/javascript">
+
+    function funcaoParaExecutar() {
+        alert('Bem-vindo!!')
+    }
+
+</script>      
+          
+    </body>
+
+</html>

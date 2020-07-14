@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- FavIcon Icone Barra do Navegador -->
+    <link rel="sortcut icon" href="../img/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+    <!-- CSS externo próprio -->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    
+    <!-- Insira a Título da página aqui-->
+    <title>Pagamento</title>
+  </head>
+
+  <body class="bg-success">
+    
+    <!-- Container Padrão. Deve englobar todo o conteudo da pagina  -->
+    <div class="container rounded p-1 m-50" style="width:60rem">
+
+        <!-- NavBar Padrão / Não Usar na Pagina Inicial -->
+      <div class="row">
+        <div class="col-sm">
+          <nav class="navbar navbar-light bg-light mb-1 mx-sm-5 rounded">
+            <img src="../img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                
+            <div class="float-right">
+                        <!-- IMPORTANTE: href deve ser incluido ao compilar projeto -->
+              <a class="navbar-brand pull-right" href="inicial-pai.html"><img src="../img/navbar/icon-home.png" /></a>
+              <a class="navbar-brand pull-right" href="perfil-pai.html"><img src="../img/navbar/icon-profile.png" /></a>
+              <a class="navbar-brand pull-right" href="chat.html"><img src="../img/navbar/icon-chat.png"></a>
+              <a class="navbar-brand pull-right" href="percurso.html"><img src="../img/navbar/icon-map.png" /></a>
+              <a class="navbar-brand pull-right active" href="pagamento.html"><img src="../img/navbar/icon-pay.png" /></a>
+              <a class="navbar-brand pull-right" href="config.html"><img src="../img/navbar/icon-config.png"/></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="bg-light p-sm-3 mx-sm-5 rounded">      
+    
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 text-center">
+            <h3> Pague sua mensalidade aqui! </h3>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row ml-sm-3 mb-sm-1">
+          <h5> Escolha a forma de pagamento:</h5>
+        </div>
+        
+        
+        
+        <form  action="gerar-boleto.html" class="form-check col-sm">
+          <div class="row px-sm-3 ml-sm-1">
+            <input class="form-check-input" type="radio" name="boleto" id="boleto" value="opcao1" required/><label class="form-check-label" for="boleto">Boleto Bancário</label>              
+          </div>
+
+          <div class="row mb-sm-1 ml-sm-1">
+            <div class="col-sm">
+              <img src="../img/1200px-EAN13.svg.png" >
+            </div> 
+          </div>
+            
+          <div class="row ml-sm-3 mb-sm-5 mt-sm-3">
+              <button type="submit" class="btn btn-success">Gerar Boleto</button>
+          </div>
+        </form>
+
+        
+        <div class="border pb-sm-3 px-sm-3">
+          <div class="row pt-sm-3">
+            <div class="col-sm">
+              <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="pagamento" id="credito" value="opcao1" required/><label class="form-check-label" for="credito">Crédito</label>
+              </div>
+              <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="pagamento" id="debito" value="opcao2" required/><label class="form-check-label" for="debito">Débito</label>  
+              </div>                            
+            </div>  
+
+            <div class="col-sm">
+             <img src="../img/ax.png">
+             <img src="../img/dinners.png">
+             <img src="../img/elo.PNG">
+             <img src="../img/hiper.png">
+             <img src="../img/master.PNG">
+             <img src="../img/visa.PNG">
+            </div>
+          </div>
+
+          <form class="formulario">
+            <div class="form-row pt-sm-3">
+              <div class="col-sm">
+                <label>Titular</label>
+                <input type="text" name="titular" class="form-control"/>
+              </div>       
+              <div class="col-sm">
+                <label>CPF</label>
+                <input type="text" name="cpf" class="form-control CPF"/>
+              </div>       
+            </div>
+            <div class="form-row pt-sm-3">
+              <div class="col-sm-6">
+                <label>Número do Cartão</label>
+                <input type="text" name="cartao" class="form-control cartao"/>
+              </div>              
+              <div class="col-sm-3">
+                <label>Validade</label>
+                <input type="text" name="validade" class="form-control validade"/>
+              </div>
+              <div class="col-sm-3">
+                <label>Código de Segurança</label>
+                <input type="text" name="codseg" class="form-control cod-seg"/>
+              </div>
+            </div>
+            <div class="row mt-sm-3 ml-sm-3">
+              <button type="submit" class="btn btn-success">Pagar</button>
+            </div>
+          </form>                                           
+            </div>                
+          </div>
+                            
+            
+                             
+           
+            
+        </div>
+      </div>
+    </div>
+
+     <!-- Biblioteca JQuery -->
+     <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+     <!-- Plugin Validate para JQuery -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+             
+     <!-- Plugin Mask -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <!-- Adicionando JS proprio -->
+    <script src="../js/script.js"></script>  
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
